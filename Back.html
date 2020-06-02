@@ -1,0 +1,83 @@
+{{FrontSide}}
+
+<div class="section" id="back-section">
+  {{#main}}
+  <div id="main" class="field">
+    <div class="fieldname">main</div>
+    {{main}}
+  </div>
+  {{/main}}
+  
+  {{#explan}}
+  <div id="back" class="field">
+    <div class="fieldname">explan</div>
+    {{explan}}
+  </div>
+  {{/explan}}
+  
+  {{#extrainfo}}
+  <div class="field">
+    <div class="fieldname">extrainfo</div>
+    {{extrainfo}}
+  </div>
+  {{/extrainfo}}
+  
+  {{#code}}
+  <div class="field">
+    <div class="fieldname">code</div>
+    <pre class="code-section"><code class="{{note}}">{{code}}</code></pre>
+    <link rel="stylesheet" href="./_highlight.min.css" />
+    <script src="./_highlight.min.js"></script>
+    <script>
+      setTimeout(function () {
+        var block = document.querySelector('pre.code-section code')
+        hljs.configure({ useBR: true })
+        hljs.highlightBlock(block)
+      }, 1)
+    </script>
+  </div>
+  {{/code}}
+  
+  {{#Tags}}
+  <div class="fieldname">Tags: {{Tags}}</div>
+  {{/Tags}}
+</div>
+
+{{#url}}
+<a class="url-link" href="{{url}}">see also: {{url}}</a>
+{{/url}}
+
+<script>
+  // markdown it!
+  var mark = document.getElementById('main')
+  if (mark !== null) {
+    var t = mark.innerHTML
+    // count '*'' occurrence in string
+    var count = (t.match(/\*/g) || []).length
+
+    // replace to <b></b>
+    if (count % 2 === 1) {
+      count -= 1
+    }
+    if (count > 0) {
+      for (var i = 0; i < count; i += 2) {
+        t = t.replace('*', '<b>').replace('*', '</b>')
+      }
+      mark.innerHTML = t
+    }
+
+    // count '$' occurrence in string
+    var count = (t.match(/\$/g) || []).length
+
+    // replace to <b></b>
+    if (count % 2 === 1) {
+      count -= 1
+    }
+    if (count > 0) {
+      for (var i = 0; i < count; i += 2) {
+        t = t.replace('$', '<mark class="inlinecode">').replace('$', '</mark>')
+      }
+      mark.innerHTML = t
+    }
+  }
+</script>

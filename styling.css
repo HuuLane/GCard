@@ -1,0 +1,81 @@
+@font-face {
+  font-family: myfont;
+  src: url("_Cascadia.ttf");
+}
+
+.card {
+  margin: 12px;
+  text-align: left;
+  background-color: #eaebef;
+}
+
+.section {
+  background-color: #fff;
+  font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif;
+  font-size: 16px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.field {
+  margin: 0 12px;
+  padding: 6px 0px;
+}
+
+.field + .field {
+  border-top: 1px solid #e5e5e5;
+}
+
+.fieldname {
+  color: #adadad;
+  font-size: 0.7em;
+  font-family: myfont;
+  padding: 0.2em 0.5em 0.5em;
+}
+
+#question {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  font-family: myfont;
+}
+
+.audio {
+  margin-left: 5px;
+}
+
+.audio img {
+  width: 65px;
+  height: 65px;
+  vertical-align: middle;
+}
+
+#main {
+  font-size: 1.2em;
+}
+
+#main mark.inlinecode {
+  background-color: #f3f3f3;
+  font-family: myfont;
+}
+
+.url-link {
+  font-size: 0.6em;
+  color: rgb(179, 179, 179);
+}
+
+.code-section {
+  font-family: myfont;
+  margin: 0.5em 0.5em;
+  padding: 0.5em 1em;
+  width: auto;
+  max-height: 300px;
+  overflow: auto;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+}
