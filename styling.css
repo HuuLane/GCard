@@ -1,6 +1,11 @@
 @font-face {
-  font-family: myfont;
+  font-family: codefont;
   src: url("_Cascadia.ttf");
+}
+
+@font-face {
+  font-family: artfont;
+  src: url("_Sonia.ttf");
 }
 
 .card {
@@ -32,15 +37,20 @@
 .fieldname {
   color: #adadad;
   font-size: 0.7em;
-  font-family: myfont;
+  font-family: codefont;
   padding: 0.2em 0.5em 0.5em;
+}
+
+.title {
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 #question {
   font-size: 2em;
   font-weight: bold;
   text-align: left;
-  font-family: myfont;
+  font-family: artfont;
 }
 
 .audio {
@@ -59,7 +69,7 @@
 
 #main mark.inlinecode {
   background-color: #f3f3f3;
-  font-family: myfont;
+  font-family: codefont;
 }
 
 .url-link {
@@ -68,7 +78,7 @@
 }
 
 .code-section {
-  font-family: myfont;
+  font-family: codefont;
   margin: 0.5em 0.5em;
   padding: 0.5em 1em;
   width: auto;
