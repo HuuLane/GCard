@@ -3,15 +3,11 @@
   src: url("_Cascadia.ttf");
 }
 
-@font-face {
-  font-family: artfont;
-  src: url("_Sonia.ttf");
-}
-
 .card {
   margin: 12px;
   text-align: left;
-  background-color: #eaebef;
+  color: #1f0909;
+  background-color: #f3f2ee;
 }
 
 .field {
@@ -37,10 +33,9 @@
 }
 
 #question {
-  font-size: 2em;
+  font-size: 4em;
   font-weight: bold;
   text-align: left;
-  font-family: artfont;
 }
 
 .audio {
@@ -58,13 +53,13 @@
 }
 
 #main mark.inlinecode {
-  background-color: #f3f3f3;
+  background-color: #dadada;
   font-family: codefont;
 }
 
 .url-link {
   font-size: 0.6em;
-  color: rgb(179, 179, 179);
+  color: #adadad;
 }
 
 .code-section {
