@@ -1,0 +1,40 @@
+.card {
+  margin: 12px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.section {
+  color: #414141;
+  background-color: #fafafa;
+  font-family: Arial;
+  font-size: 16px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 12px 0;
+}
+
+.items {
+  margin: 0 12px;
+  padding: 10px 0;
+}
+
+.items + .items {
+  border-top: 1px solid #e5e5e5;
+}
+
+#front,
+#back {
+  line-height: 1.5em;
+}
+
+#front {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+}
+
+#sentence {
+  font-size: 1.2em;
+}
