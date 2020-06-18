@@ -7,7 +7,6 @@
   margin: 12px;
   text-align: left;
   color: #1f0909;
-  background-color: #f3f2ee;
 }
 
 .field {
@@ -33,7 +32,7 @@
 }
 
 #question {
-  font-size: 4em;
+  font-size: 2rem;
   font-weight: bold;
   text-align: left;
 }
@@ -46,10 +45,6 @@
   width: 65px;
   height: 65px;
   vertical-align: middle;
-}
-
-#main {
-  font-size: 1.2em;
 }
 
 #main mark.inlinecode {
