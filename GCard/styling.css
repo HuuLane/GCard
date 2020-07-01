@@ -49,9 +49,11 @@
   vertical-align: middle;
 }
 
-#main mark.inlinecode {
+/* for inline-code */
+code:not(.code-section-code) {
   background-color: #dadada;
   font-family: codefont;
+  font-size: 0.8rem;
 }
 
 .url-link {
@@ -59,9 +61,10 @@
   color: #adadad;
 }
 
-.code-section {
+pre {
   font-family: codefont;
   width: auto;
   overflow: auto;
   font-size: 0.8rem;
+  background-color: #f6f8fa;
 }

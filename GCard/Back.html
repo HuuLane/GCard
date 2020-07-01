@@ -32,7 +32,7 @@
       }
       if (count > 0) {
         for (var i = 0; i < count; i += 2) {
-          t = t.replace('$', '<mark class="inlinecode">').replace('$', '</mark>')
+          t = t.replace('$', '<code>').replace('$', '</code>')
         }
         mark.innerHTML = t
       }
@@ -58,7 +58,7 @@
 {{#code}}
 <div class="field">
   <div class="fieldname">code {{codetype}}</div>
-  <pre class="code-section"><code class="{{codetype}}">{{code}}</code></pre>
+  <pre class="code-section"><code class="code-section-code {{codetype}}">{{code}}</code></pre>
   <link rel="stylesheet" href="./_highlight.min.css" />
   <script src="./_highlight.min.js"></script>
   <script>
