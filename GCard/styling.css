@@ -50,15 +50,10 @@
 }
 
 /* for inline-code */
-code:not(.code-section-code) {
+code {
   background-color: #dadada;
   font-family: codefont;
   font-size: 0.8rem;
-}
-
-.url-link {
-  font-size: 0.6em;
-  color: #adadad;
 }
 
 pre {
@@ -67,4 +62,18 @@ pre {
   overflow: auto;
   font-size: 0.8rem;
   background-color: #f6f8fa;
+}
+
+/* for my code-section */
+pre.code-section {
+  background-color: inherit;
+}
+
+pre code {
+  background-color: inherit !important;
+}
+
+.url-link {
+  font-size: 0.6em;
+  color: #adadad;
 }
