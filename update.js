@@ -1,5 +1,6 @@
 const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest
 const fs = require('fs').promises
+const path = require('path')
 
 const invoke = function (action, version, params = {}) {
   return new Promise((resolve, reject) => {
@@ -33,30 +34,34 @@ const invoke = function (action, version, params = {}) {
 
 const r = async path => fs.readFile(path, 'utf8')
 
-const main = async () => {
-  // const t = await r('./GCard/Back.html')
-  // console.log(t)
+const main = async (templateName) => {
+  console.log(templateName)
+
+  const f = path.join('.', templateName, 'Front.html')
+  const b = path.join('.', templateName, 'Back.html')
+  const s = path.join('.', templateName, 'styling.css')
   invoke('updateModelTemplates', 6, {
     model: {
-      name: 'GCard',
+      name: templateName,
       templates: {
         card1: {
-          Front: await r('./GCard/Front.html'),
-          Back: await r('./GCard/Back.html')
+          Front: await r(f),
+          Back: await r(b)
         }
       }
     }
   })
   invoke('updateModelStyling', 6, {
     model: {
-      name: 'GCard',
-      css: await r('./GCard/styling.css')
+      name: templateName,
+      css: await r(s)
     }
   })
 }
 
 try {
-  main()
+  main('GCard')
+  // main('macmillan7000')
 } catch (err) {
   console.error(err)
 }
