@@ -39,11 +39,8 @@
   text-align: left;
 }
 
-.audio {
+.replay-button svg {
   margin-left: 5px;
-}
-
-.audio img {
   width: 65px;
   height: 65px;
   vertical-align: middle;
