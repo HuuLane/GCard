@@ -34,7 +34,7 @@ const invoke = function (action, version, params = {}) {
 
 const r = async path => fs.readFile(path, 'utf8')
 
-const main = async (templateName) => {
+const main = async templateName => {
   console.log(templateName)
 
   const f = path.join('.', templateName, 'Front.html')
@@ -60,7 +60,8 @@ const main = async (templateName) => {
 }
 
 try {
-  main('GCard')
+  // main('GCard')
+  main('Gcard-Cloze') // can't update
   // main('macmillan7000')
 } catch (err) {
   console.error(err)

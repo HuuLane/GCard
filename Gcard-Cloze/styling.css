@@ -1,0 +1,80 @@
+/* https://ankiweb.net/shared/info/1899278645 */
+@import url("_editor_button_styles.css");
+@font-face {
+  font-family: codefont;
+  src: url("_Cascadia.ttf");
+}
+
+.card {
+  margin: 12px;
+  text-align: left;
+  color: #1f0909;
+}
+
+.field {
+  font-family: Arial;
+  font-size: 20px;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+  margin: 12px 0;
+  padding: 0.6rem;
+}
+
+.fieldname {
+  color: #adadad;
+  font-size: 0.7rem;
+  font-family: codefont;
+  padding: 0.2rem;
+}
+
+.title {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#keyword {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.replay-button svg {
+  margin-left: 5px;
+  width: 65px;
+  height: 65px;
+  vertical-align: middle;
+}
+
+/* for inline-code */
+code {
+  background-color: #dadada;
+  font-family: codefont;
+  font-size: 0.8rem;
+}
+
+pre {
+  font-family: codefont;
+  width: auto;
+  overflow: auto;
+  font-size: 0.8rem;
+  background-color: #f6f8fa;
+}
+
+/* for my code-section */
+pre.code-section {
+  background-color: inherit;
+}
+
+pre code {
+  background-color: inherit !important;
+}
+
+/* for cloze */
+.cloze {
+  font-weight: bold;
+  color: blue;
+}
+.nightMode .cloze {
+  color: lightblue;
+}

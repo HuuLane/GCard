@@ -1,0 +1,43 @@
+<div class="title">
+  <span id="keyword">{{keyword}}</span>
+  <span>[sound:https://dict.youdao.com/dictvoice?audio={{keyword}}&type=2]</span>
+</div>
+
+<div class="field">
+  <div class="fieldname">Question Infomations</div>
+  <div>{{cloze:questioninfo}}</div>
+</div>
+
+{{#explan}}
+<div class="field">
+  <div class="fieldname">explan</div>
+  {{explan}}
+</div>
+{{/explan}}
+
+{{#extrainfo}}
+<div class="field">
+  <div class="fieldname">extrainfo</div>
+  {{extrainfo}}
+</div>
+{{/extrainfo}}
+
+{{#code}}
+<div class="field">
+  <div class="fieldname">code {{codetype}}</div>
+  <pre class="code-section"><code class="{{codetype}}">{{code}}</code></pre>
+  <link rel="stylesheet" href="./_highlight.min.css" />
+  <script src="./_highlight.min.js"></script>
+  <script>
+    setTimeout(function () {
+      var block = document.querySelector('pre.code-section code')
+      hljs.configure({ useBR: true })
+      hljs.highlightBlock(block)
+    }, 1)
+  </script>
+</div>
+{{/code}}
+
+{{#Tags}}
+<div class="fieldname">Tags: {{Tags}}</div>
+{{/Tags}}
