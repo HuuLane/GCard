@@ -1,10 +1,15 @@
 {{FrontSide}}
 
-<div class="section">
-  {{#extrainfo}}
-  <div class="items">{{extrainfo}}</div>
-  {{/extrainfo}}
-  {{#explain}}
-  <div class="items">{{explain}}</div>
-  {{/explain}}
+{{#explain}}
+<div class="field">
+  <div class="fieldname">explain</div>
+  {{explain}}
 </div>
+{{/explain}}
+
+{{#extrainfo}}
+<div class="field">
+  <div class="fieldname">extrainfo</div>
+  {{extrainfo}}
+</div>
+{{/extrainfo}}

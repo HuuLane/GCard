@@ -4,26 +4,37 @@
   color: #1f0909;
 }
 
-.items {
-  margin: 0 12px;
-  padding: 10px 0;
+.field {
+  font-family: Arial;
+  font-size: 20px;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+  margin: 12px 0;
+  padding: 0.6rem;
 }
 
-.items + .items {
-  border-top: 1px solid #e5e5e5;
+.fieldname {
+  color: #adadad;
+  font-size: 0.7rem;
+  font-family: codefont;
+  padding: 0.2rem;
 }
 
-#front,
-#back {
-  line-height: 1.5em;
+.title {
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
-#front {
-  font-size: 2em;
+#question {
+  font-size: 2rem;
   font-weight: bold;
   text-align: left;
 }
 
-#sentence {
-  font-size: 1.2em;
+.replay-button svg {
+  margin-left: 5px;
+  width: 65px;
+  height: 65px;
+  vertical-align: middle;
 }

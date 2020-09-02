@@ -1,10 +1,11 @@
-<div class="section">
-  <div id="front" class="items">
-    {{expression}}
-    [sound:https://dict.youdao.com/dictvoice?audio={{expression}}&type=2]
-  </div>
-
-  {{#sentence}}
-  <div id="sentence" class="items">{{sentence}}</div>
-  {{/sentence}}
+<div class="title">
+  <span id="question">{{expression}}</span>
+  <span>[sound:https://dict.youdao.com/dictvoice?audio={{expression}}&type=2]</span>
 </div>
+
+{{#sentence}}
+<div class="field">
+  <div class="fieldname">sentence</div>
+  {{sentence}}
+</div>
+{{/sentence}}
