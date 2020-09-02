@@ -1,43 +1,9 @@
 {{FrontSide}}
 
 {{#main}}
-<div id="main" class="field">
+<div class="field">
   <div class="fieldname">main</div>
   {{main}}
-  <script>
-    // markdown it!
-    var mark = document.getElementById('main')
-    if (mark !== null) {
-      var t = mark.innerHTML
-      // count '*'' occurrence in string
-      var count = (t.match(/\*/g) || []).length
-  
-      // replace to <b></b>
-      if (count % 2 === 1) {
-        count -= 1
-      }
-      if (count > 0) {
-        for (var i = 0; i < count; i += 2) {
-          t = t.replace('*', '<b>').replace('*', '</b>')
-        }
-        mark.innerHTML = t
-      }
-  
-      // count '$' occurrence in string
-      var count = (t.match(/\$/g) || []).length
-  
-      // replace to <b></b>
-      if (count % 2 === 1) {
-        count -= 1
-      }
-      if (count > 0) {
-        for (var i = 0; i < count; i += 2) {
-          t = t.replace('$', '<code>').replace('$', '</code>')
-        }
-        mark.innerHTML = t
-      }
-    }
-  </script>  
 </div>
 {{/main}}
 
