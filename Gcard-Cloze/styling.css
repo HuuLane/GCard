@@ -78,3 +78,13 @@ pre code {
 .nightMode .cloze {
   color: lightblue;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
