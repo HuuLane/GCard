@@ -1,6 +1,9 @@
 <div class="title">
   <span id="question">{{expression}}</span>
-    <span>[sound:https://media.shanbay.com/audio/us/{{expression}}.mp3]</span>
+  <!--anki desktop will play the audio, only if the the link with mp3 suffix -->
+  <span
+    >[sound:http://dict.youdao.com/dictvoice?audio={{expression}}&type=2.mp3]</span
+  >
 </div>
 
 {{#sentence}}
