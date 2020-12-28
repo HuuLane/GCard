@@ -78,7 +78,7 @@ const getLocalModelNames = async () => {
   return localModelNames
 }
 
-// Currently, all my models have only one template, generally named'card1', except the 'Cloze'.
+// Currently, all my models(Note Types) have only one card template, generally named'card1', except the 'Cloze'.
 const getTemplateNames = async modelName => {
   const result = await invoke('modelTemplates', 6, {
     modelName

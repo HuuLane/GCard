@@ -59,6 +59,21 @@ pre {
   overflow: auto;
   font-size: 0.8rem;
   background-color: #f6f8fa;
+
+  /* copy from somewhere */
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  display: block;
+  padding: 9.5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #212529;
+  background-color: #f8f9fa;
 }
 
 /* for my code-section */
@@ -75,14 +90,89 @@ pre code {
   color: #adadad;
 }
 
-/*
+/* copy from mdn */
 table {
+  color: #212121;
+  text-rendering: optimizeSpeed;
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.75;
+  box-sizing: border-box;
+  font-size: 1rem;
   border-collapse: collapse;
+  width: auto;
+  margin-bottom: 48px;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
+thead {
+  color: #212121;
+  text-rendering: optimizeSpeed;
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.75;
+  font-size: 1rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
 }
-*/
+
+tbody {
+  color: #212121;
+  text-rendering: optimizeSpeed;
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.75;
+  font-size: 1rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+tr {
+  color: #212121;
+  text-rendering: optimizeSpeed;
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.75;
+  font-size: 1rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+th {
+  color: #212121;
+  text-rendering: optimizeSpeed;
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.75;
+  font-size: 1rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: left;
+  border: 0;
+  padding: 12px;
+  background-color: #eee;
+  border-bottom: 2px solid #fff;
+  border-left: 0;
+}
+
+td {
+  color: #212121;
+  text-rendering: optimizeSpeed;
+  font-family: arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.75;
+  font-size: 1rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: left;
+  border: 0;
+  border-left: 2px solid #fff;
+  padding: 12px;
+  background-color: #eee;
+  border-bottom: 2px solid #fff;
+}
